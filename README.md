@@ -130,7 +130,7 @@ Each experiment is a self-contained Jupyter notebook. Run notebooks from their o
 
 | Notebook | Problem | Key method |
 |---|---|---|
-| `Foundational_Model_FONKNORIS/FONKNORIS_Foundational_Model.ipynb` | Klein–Gordon, Sine–Gordon (unseen PDEs) | FONKNORIS |
+| `Foundational_Model_FONKNORIS/FONKNORIS_Foundational_Model.ipynb` | Nonlinear Elliptic, Burger's Equation, Darcy Flow (seen PDEs), Klein–Gordon, Sine–Gordon (unseen PDEs) | FONKNORIS |
 
 ### Baselines (GP operator learning)
 
