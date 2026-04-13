@@ -51,8 +51,8 @@ CHONKNORIS/
 │   └── maxheap.py                       # Max-heap utility for ordering
 │
 ├── Forward_Problems/                    # Forward PDE experiments
-│   ├── Semilinear_Elliptic_Equation.ipynb
-│   ├── Burgers_Equation.ipynb
+│   ├── Semilinear_Elliptic_Equation_1D.ipynb
+│   ├── Burgers_Equation_1D.ipynb
 │   └── darcy_2d.ipynb
 │
 ├── Inverse_Problems/                    # Inverse PDE experiments
@@ -64,7 +64,7 @@ CHONKNORIS/
 │       └── gauss_newton_solver.py
 │
 ├── Foundational_Model_FONKNORIS/        # FONKNORIS foundation model
-│   └── foundation_modeling_FONKNORIS_.ipynb
+│   └── FONKNORIS_Foundational_Model.ipynb
 │
 ├── benchmarks/                          # Baseline comparisons
 │   └── gaussian_process/                # GP operator learning baseline
@@ -114,8 +114,8 @@ Each experiment is a self-contained Jupyter notebook. Run notebooks from their o
 
 | Notebook | Problem | Key method |
 |---|---|---|
-| `Forward_Problems/Semilinear_Elliptic_Equation.ipynb` | Nonlinear elliptic PDE (1D) | CHONKNORIS with sparse Cholesky |
-| `Forward_Problems/Burgers_Equation.ipynb` | Burgers' equation | CHONKNORIS with sparse Cholesky |
+| `Forward_Problems/Semilinear_Elliptic_Equation_1D.ipynb` | Nonlinear elliptic PDE (1D) | CHONKNORIS with sparse Cholesky |
+| `Forward_Problems/Burgers_Equation_1D.ipynb` | Burgers' equation | CHONKNORIS with sparse Cholesky |
 | `Forward_Problems/darcy_2d.ipynb` | Nonlinear Darcy flow (2D) | CHONKNORIS + GP initial guess |
 
 ### Inverse Problems
@@ -130,7 +130,7 @@ Each experiment is a self-contained Jupyter notebook. Run notebooks from their o
 
 | Notebook | Problem | Key method |
 |---|---|---|
-| `Foundational_Model_FONKNORIS/foundation_modeling_FONKNORIS_.ipynb` | Klein–Gordon, Sine–Gordon (unseen PDEs) | FONKNORIS |
+| `Foundational_Model_FONKNORIS/FONKNORIS_Foundational_Model.ipynb` | Klein–Gordon, Sine–Gordon (unseen PDEs) | FONKNORIS |
 
 ### Baselines (GP operator learning)
 

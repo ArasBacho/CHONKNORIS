@@ -17,6 +17,7 @@ install_requires = [
     'pykolesky',
     'fastgps',
     'devito',
+    'tensorflow',
 ]
 
 setuptools.setup(
