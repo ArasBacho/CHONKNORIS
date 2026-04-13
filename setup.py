@@ -14,6 +14,7 @@ install_requires = [
     'pandas',
     'matplotlib',
     'neuraloperator',
+    'pykolesky',
 ]
 
 setuptools.setup(
