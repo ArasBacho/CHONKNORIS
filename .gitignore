@@ -1,0 +1,62 @@
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# PyTorch / model outputs
+*.pt
+*.pth
+*.ckpt
+hparams.yaml
+metrics.csv
+**/logs/
+lightning_logs/
+
+# Data / large files
+*.npz
+*.npy
+*.h5
+*.hdf5
+*.csv
+*.zip
+*.tar
+*.gz
+
+# Paper outputs (keep .gitignore placeholders but not generated files)
+paper_plots/forward_problems/in/*
+paper_plots/forward_problems/out/*
+paper_plots/inverse_problems/in/*
+paper_plots/inverse_problems/out/*
+!paper_plots/**/.gitignore
+
+# FWI outputs and data
+Inverse_Problems/fwi/out/*
+!Inverse_Problems/fwi/out/.gitignore
+Inverse_Problems/fwi/train_samples/
+Inverse_Problems/fwi/test/
+
+# Experiment outputs
+Forward_Problems/out/
+Inverse_Problems/out/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Misc
+nohup.out
+*.png

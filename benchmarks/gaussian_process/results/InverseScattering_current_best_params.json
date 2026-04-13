@@ -1,0 +1,16 @@
+{
+  "pca_input_components": 93,
+  "alpha": 1.0268342902265551e-11,
+  "length_scale": 26047.303353982777,
+  "normalize": true,
+  "pca_output_components": 0,
+  "weight_matern": 0.9038048583306544,
+  "nu": "2.5",
+  "use_relative_l2_loss": true,
+  "objective value": 0.05050950539445085,
+  "trial number": 63,
+  "parameters": [
+    26047.303353982777,
+    0.9038048583306544
+  ]
+}
