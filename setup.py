@@ -15,6 +15,8 @@ install_requires = [
     'matplotlib',
     'neuraloperator',
     'pykolesky',
+    'fastgps',
+    'devito',
 ]
 
 setuptools.setup(
