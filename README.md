@@ -102,7 +102,7 @@ import torch
 print(torch.cuda.is_available())  # should be True for GPU experiments
 ```
 
-> **Note:** All experiments require a CUDA-capable GPU and use `torch.float64` (double precision) throughout.
+> **Note:** Some experiments require a CUDA-capable GPU and use `torch.float64` (double precision) throughout.
 
 ---
 
