@@ -1,0 +1,56 @@
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[project.urls]
+Preprint = "https://arxiv.org/abs/2511.19980"
+Repository = "https://github.com/alegresor/CHONKNORIS"
+Issues = "https://github.com/alegresor/CHONKNORIS/issues"
+
+[project]
+name = "chonknoris"
+description = "CHONKNORIS for operator learning at machine precision"
+authors = [
+    {name="Aras Bacho"},
+    {name="Aleksei G. Sorokin"},
+    {name="Xianjin Yang"},
+    {name="Theo Bourdais"},
+    {name="Edoardo Calvello"},
+    {name="Matthieu Darcy"},
+    {name="Alexander Hsu"},
+    {name="Bamdad Hosseini"},
+    {name="Houman Owhadi"},
+    ]
+readme = "README.md"
+keywords=[
+    "operator learning",
+    "machine precision",
+    "Newton-Kantorovich",
+    "Levenberg-Marquardt",
+    "Cholesky",
+    "neural operator",
+    "residual iterative system",
+    ]
+license = "GPL-3.0"
+dynamic = ["version"]
+requires-python = ">= 3.5"
+dependencies = [
+    "torch >= 2.0",
+    "jax >= 0.5.0",
+    "pyKoLesky==0.1.6",
+    "matplotlib >= 1.1.0",
+    "pcax >= 0.1.0",
+    "optuna >= 3.6.0",
+    "scikit-learn >= 1.5.0",
+    "pandas >= 2.0.0",
+    "jupyterlab>=4.5.0",
+    "fastgps >= 1.1",
+    "lightning >= 2.6.0",
+    "gpytorch >= 1.14.0, <= 1.15",
+    "neuraloperator >= 1.0.0",
+    "torchdiffeq >= 0.2.5",
+    ]
+
+[tool.pdm.version]
+source = "file"
+path = "__init__.py"
