@@ -310,10 +310,10 @@ if __name__ == "__main__":
     print("wavefield.dtype = %s\n"%str(wavefield.dtype))
     
     pnames = [
-        "RES70",
-        "RES14",
-        "RES10",
-        "RES7",
+        # "RES70",
+        # "RES14",
+        # "RES10",
+        # "RES7",
         "RES5",
     ]
     for pname in pnames:

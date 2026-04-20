@@ -251,7 +251,7 @@ if __name__ == "__main__":
     outfile = open("gauss_newton_solver.csv","w") # recommend the rainbow CSV VSCode extension
     sys.stdout = outfile # Uncomment to send to log file which is easier to read
 
-    pname = "RES14"
+    pname = "RES5"
     vtype = "Style_B"
     custom_rkhs_v = False
     custom_rkhs_w = False
@@ -298,7 +298,7 @@ if __name__ == "__main__":
     v0 = torch.tile(v_all.mean(0,keepdim=True),(R,1,1)).to(DEVICE)
     print("here")
     vhat,data_gn = fwi_gn_solver(p,w,v0,Thetainv_v,Thetainv_w,vref=vref,compute_cond_nums=False,
-                              num_newton_iter = 300,
+                              num_newton_iter = 10,
                               verbose = 1,
                                relaxation = 1e1,
                             #  relaxation = 5e-5,

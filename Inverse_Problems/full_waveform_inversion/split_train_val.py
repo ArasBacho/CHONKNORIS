@@ -53,11 +53,11 @@ if __name__ == "__main__":
     device = "cuda:3"
 
     pnames = [
-        "RES70",
+        # "RES70",
         #"RES14",
         # "RES10",
         # "RES7",
-        # "RES5",
+        "RES5",
     ]
     vtype = "Style_B"
     # generate reference data
