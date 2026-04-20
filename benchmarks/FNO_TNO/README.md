@@ -1,4 +1,4 @@
-## Fourier Neural Operator Transformer Neural Operators
+## Fourier Neural Operator / Transformer Neural Operators
 
 Transformer Neural Operator architechtures and experiments are based on the paper "Continuum Attention for Neural Operators" (https://arxiv.org/abs/2406.06486)
 
