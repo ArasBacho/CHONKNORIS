@@ -12,7 +12,7 @@ experiment_name = args.name
 
 valid_names = ['burgers_pde', 'darcy_pde_2d', 'elliptic_pde', 
                'seismic_res5', 'seismic_res7', 'seismic_res10', 'seismic_res14',
-               "InverseScattering", "Calderon"]
+               "inverse_scattering", "Calderon"]
 
 if experiment_name not in valid_names:
     raise ValueError(f"Invalid experiment name. Must be one of: {valid_names}")
@@ -60,7 +60,7 @@ if pb_name == 'darcy_pde_2d':
     # Extract the first channel for 2D data
     u_t =  u_t[:, 0, :]
     u_v =  u_v[:, 0, :]
-elif pb_name == 'InverseScattering':
+elif pb_name == 'inverse_scattering':
     n_train = 9750
     n_test = 10999# Use all test data
 
@@ -124,8 +124,8 @@ def kernel(x,y, param):
     weight_dot = 1.0 - weight_matern
     return weight_matern * matern_kernel(x, y, length_scale) + weight_dot * dot_kernel(x, y)
 
-if pb_name == 'InverseScattering':
-    use_relative_l2_loss = True  # Use relative L2 loss for InverseScattering problem
+if pb_name == 'inverse_scattering':
+    use_relative_l2_loss = True  # Use relative L2 loss for inverse_scattering problem
 else:
     use_relative_l2_loss = False
 
@@ -220,6 +220,7 @@ if args.time:
         "n_runs": n_runs,
         "n_predictions_per_run": 1,
         "times_per_prediction": [float(t) for t in times],
+        "time_per_prediction_median": float(np.median(times_np)),
         "time_per_prediction_mean": float(times_np.mean()),
         "time_per_prediction_std": float(times_np.std()),
         "time_per_prediction_min": float(times_np.min()),

@@ -10,7 +10,7 @@ problems = [
     'seismic_res7',
     'seismic_res10',
     'seismic_res14',
-    'InverseScattering', # warning: larger dataset
+    'inverse_scattering', # warning: larger dataset
     'Calderon' # warning: larger dataset
 ]
 

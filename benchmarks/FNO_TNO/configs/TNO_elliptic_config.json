@@ -1,0 +1,260 @@
+{
+  "T": {
+    "value": {
+      "val": 100,
+      "test": 100,
+      "train": 100
+    }
+  },
+  "seed": {
+    "value": 0
+  },
+  "size": {
+    "value": {
+      "val": 200,
+      "test": 200,
+      "train": 10000
+    }
+  },
+  "nhead": {
+    "value": 8
+  },
+  "_wandb": {
+    "value": {
+      "e": {
+        "yqdgyy34xe7gv8s1ex6y1kg43kupphyg": {
+          "os": "Linux-5.14.0-427.13.1.el9_4.x86_64-x86_64-with-glibc2.34",
+          "git": {
+            "commit": "fd3249363acfa5bf3094e1f937c0766ba05d9882"
+          },
+          "gpu": "Tesla P100-PCIE-16GB",
+          "args": [
+            "--id",
+            "0"
+          ],
+          "disk": {
+            "/": {
+              "used": "26655334400",
+              "total": "75094818816"
+            }
+          },
+          "host": "hpc-90-38.cm.cluster",
+          "root": "/resnick/groups/astuart/ecalvello/DeepNewtonOperator/paper_run_scripts/1d_experiments_TNO",
+          "email": "edoardo.calvello@gmail.com",
+          "slurm": {
+            "conf": "/central/slurm/etc/slurm.conf",
+            "gtids": "0",
+            "jobid": "53897059",
+            "job_id": "53897059",
+            "nnodes": "1",
+            "nodeid": "0",
+            "nprocs": "1",
+            "ntasks": "1",
+            "procid": "0",
+            "job_gid": "104",
+            "job_qos": "normal",
+            "job_uid": "23147",
+            "localid": "0",
+            "job_gpus": "1",
+            "job_name": "E_TNO",
+            "job_user": "ecalvell",
+            "nodelist": "hpc-90-38",
+            "task_pid": "1861879",
+            "submit_dir": "/resnick/groups/astuart/ecalvello/DeepNewtonOperator/paper_run_scripts/1d_experiments_TNO",
+            "job_account": "astuart",
+            "mem_per_cpu": "65536",
+            "submit_host": "login3.cm.cluster",
+            "array_job_id": "53897059",
+            "cluster_name": "central",
+            "cpus_on_node": "1",
+            "gpus_on_node": "1",
+            "job_end_time": "1758622209",
+            "job_nodelist": "hpc-90-38",
+            "prio_process": "0",
+            "array_task_id": "0",
+            "job_num_nodes": "1",
+            "job_partition": "gpu",
+            "topology_addr": "core.sw-89-90.hpc-90-38",
+            "array_task_max": "0",
+            "array_task_min": "0",
+            "job_start_time": "1758579009",
+            "tasks_per_node": "1",
+            "array_task_step": "1",
+            "array_task_count": "1",
+            "job_cpus_per_node": "1",
+            "topology_addr_pattern": "switch.switch.node"
+          },
+          "memory": {
+            "total": "269822468096"
+          },
+          "python": "CPython 3.10.18",
+          "program": "/resnick/groups/astuart/ecalvello/DeepNewtonOperator/paper_run_scripts/1d_experiments_TNO/run.py",
+          "codePath": "paper_run_scripts/1d_experiments_TNO/run.py",
+          "writerId": "yqdgyy34xe7gv8s1ex6y1kg43kupphyg",
+          "cpu_count": 28,
+          "gpu_count": 1,
+          "startedAt": "2025-09-22T22:10:13.679708Z",
+          "executable": "/groups/astuart/ecalvell/anaconda3/envs/transformers_revision/bin/python",
+          "gpu_nvidia": [
+            {
+              "name": "Tesla P100-PCIE-16GB",
+              "uuid": "GPU-9ed4e692-e545-9b9b-1dd6-0d9f85868989",
+              "cudaCores": 3584,
+              "memoryTotal": "17179869184",
+              "architecture": "Pascal"
+            }
+          ],
+          "cudaVersion": "12.8",
+          "codePathLocal": "run.py",
+          "cpu_count_logical": 28
+        }
+      },
+      "m": [],
+      "t": {
+        "1": [
+          1,
+          9,
+          41,
+          51,
+          103
+        ],
+        "2": [
+          1,
+          9,
+          41,
+          51,
+          103
+        ],
+        "3": [
+          16
+        ],
+        "4": "3.10.18",
+        "5": "0.21.0",
+        "12": "0.21.0",
+        "13": "linux-x86_64"
+      },
+      "cli_version": "0.21.0",
+      "python_version": "3.10.18"
+    }
+  },
+  "d_model": {
+    "value": 128
+  },
+  "dropout": {
+    "value": 0.0001
+  },
+  "input_dim": {
+    "value": 1
+  },
+  "loss_name": {
+    "value": "l2_rel"
+  },
+  "activation": {
+    "value": "gelu"
+  },
+  "batch_size": {
+    "value": 1
+  },
+  "domain_dim": {
+    "value": 1
+  },
+  "input_inds": {
+    "value": [
+      0
+    ]
+  },
+  "max_epochs": {
+    "value": 100
+  },
+  "norm_first": {
+    "value": false
+  },
+  "num_layers": {
+    "value": 6
+  },
+  "output_dim": {
+    "value": 1
+  },
+  "split_frac": {
+    "value": {
+      "val": 0.05,
+      "train": 0.95
+    }
+  },
+  "output_inds": {
+    "value": [
+      -1
+    ]
+  },
+  "dyn_sys_name": {
+    "value": "Elliptic"
+  },
+  "random_state": {
+    "value": 0
+  },
+  "deterministic": {
+    "value": true
+  },
+  "do_layer_norm": {
+    "value": true
+  },
+  "learning_rate": {
+    "value": 0.0001
+  },
+  "pos_enc_coeff": {
+    "value": 1
+  },
+  "monitor_metric": {
+    "value": "loss/val/mse"
+  },
+  "dim_feedforward": {
+    "value": 128
+  },
+  "overfit_batches": {
+    "value": 0
+  },
+  "tune_batch_size": {
+    "value": false
+  },
+  "tune_initial_lr": {
+    "value": false
+  },
+  "use_transformer": {
+    "value": true
+  },
+  "include_y0_input": {
+    "value": false
+  },
+  "gradient_clip_val": {
+    "value": 10
+  },
+  "log_every_n_steps": {
+    "value": 10
+  },
+  "test_sample_rates": {
+    "value": [
+      1
+    ]
+  },
+  "train_sample_rate": {
+    "value": 1
+  },
+  "lr_scheduler_params": {
+    "value": {
+      "factor": 0.5,
+      "patience": 2
+    }
+  },
+  "max_sequence_length": {
+    "value": 102
+  },
+  "append_position_to_x": {
+    "value": true
+  },
+  "gradient_clip_algorithm": {
+    "value": "value"
+  },
+  "use_positional_encoding": {
+    "value": false
+  }
+}

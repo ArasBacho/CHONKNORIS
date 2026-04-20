@@ -3,7 +3,7 @@ import subprocess
 valid_names = [
     'burgers_pde', 'darcy_pde_2d', 'elliptic_pde',
     'seismic_res5', 'seismic_res7', 'seismic_res10', 'seismic_res14',
-    "InverseScattering", "Calderon"
+    "inverse_scattering", "Calderon"
 ]
 
 for name in valid_names:

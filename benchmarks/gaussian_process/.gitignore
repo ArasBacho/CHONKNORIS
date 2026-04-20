@@ -1,0 +1,7 @@
+scikit_learn_data/
+results/*.npz
+results/*_timing.json
+results/*_current_best_params.json
+data/
+data_copy/
+results_copy/

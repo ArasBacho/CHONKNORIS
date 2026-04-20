@@ -63,7 +63,7 @@ if pb_name == 'darcy_pde_2d':
     # Extract the first channel for 2D data
     u_t =  u_t[:, 0, :]
     u_v =  u_v[:, 0, :]
-elif pb_name == 'InverseScattering':
+elif pb_name == 'inverse_scattering':
     n_train = 9750
     n_test = 10999# Use all test data
 
@@ -136,11 +136,11 @@ max_pca_output = int(jnp.min(jnp.array([machine_precision_output, v_t.shape[1], 
 
 if pb_name == 'Calderon': # Calderon has a lot of input features, so we limit the PCA input components to 100 to fit in memory
     max_pca_input = 100
-    print(f"Limiting PCA input components to {max_pca_input} for InverseScattering problem to fit in memory")
+    print(f"Limiting PCA input components to {max_pca_input} for inverse_scattering problem to fit in memory")
     print("Missing variance is", 1- jnp.sum(variance_input[:max_pca_input]))
-elif pb_name == 'InverseScattering': # InverseScattering has a lot of input features, so we limit the PCA input components to 100 to fit in memory
+elif pb_name == 'inverse_scattering': # inverse_scattering has a lot of input features, so we limit the PCA input components to 100 to fit in memory
     max_pca_input = 100
-    print(f"Limiting PCA input components to {max_pca_input} for InverseScattering problem to fit in memory")
+    print(f"Limiting PCA input components to {max_pca_input} for inverse_scattering problem to fit in memory")
     print("Missing variance is", 1- jnp.sum(variance_input[:max_pca_input]))
 
 #%%
@@ -163,8 +163,8 @@ def kernel(x,y, param):
     weight_dot = 1.0 - weight_matern
     return weight_matern * matern_kernel(x, y, length_scale) + weight_dot * dot_kernel(x, y)
 
-if pb_name == 'InverseScattering':
-    use_relative_l2_loss = True  # Use relative L2 loss for InverseScattering problem
+if pb_name == 'inverse_scattering':
+    use_relative_l2_loss = True  # Use relative L2 loss for inverse_scattering problem
 else:
     use_relative_l2_loss = False
 
@@ -219,7 +219,7 @@ def objective(trial):
 
         nu = trial.suggest_categorical('nu', ['0.5', '1.5', '2.5', 'inf'])
 
-        if pb_name == 'InverseScattering':
+        if pb_name == 'inverse_scattering':
             use_relative_l2_loss = trial.suggest_categorical('use_relative_l2_loss', [True, False])
         else:
             use_relative_l2_loss = False
@@ -256,7 +256,7 @@ def objective(trial):
         return jnp.inf
 
 #%%
-if pb_name == 'InverseScattering':
+if pb_name == 'inverse_scattering':
     initial_guess = {
         "alpha": 1e-10,
         "length_scale": 1.0,
@@ -265,7 +265,7 @@ if pb_name == 'InverseScattering':
         "pca_output_components": max_pca_output,
         "weight_matern": 0.5,  
         "nu": "1.5",  # Default value for nu
-        "relative_l2_loss": True  # Use relative L2 loss for InverseScattering problem
+        "relative_l2_loss": True  # Use relative L2 loss for inverse_scattering problem
     }
 else:
     initial_guess = {
